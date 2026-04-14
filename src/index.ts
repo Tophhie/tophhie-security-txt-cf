@@ -4,13 +4,13 @@ export default {
 
     if (url.pathname === '/.well-known/security.txt' || url.pathname === '/security.txt') {
 const content = `#
-#  T o p h h i e  C l o u d  !
-#  ───────────────────────────
-#  Hey there, curious one. 👋🏻
+#  Tophhie Cloud
+# 
+#  Hey there, curious one.
 #  Found something? We want to hear it.
 #  Responsible disclosure is always appreciated.
 #
-#  Full policy → https://blog.tophhie.cloud/security-vulnerability-disclosure-policy/
+#  Full policy: https://blog.tophhie.cloud/security-vulnerability-disclosure-policy/
 #
 
 Contact: mailto:security@tophhie.cloud
