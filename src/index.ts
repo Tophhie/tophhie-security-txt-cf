@@ -3,13 +3,22 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === '/.well-known/security.txt' || url.pathname === '/security.txt') {
-      const content = `# Tophhie Cloud Security Disclosure
+const content = `#
+#  T o p h h i e  C l o u d  !
+#  ───────────────────────────
+#  Hey there, curious one. 👋🏻
+#  Found something? We want to hear it.
+#  Responsible disclosure is always appreciated.
+#
+#  Full policy → https://blog.tophhie.cloud/security-vulnerability-disclosure-policy/
+#
+
 Contact: mailto:security@tophhie.cloud
-Expires: 2027-04-14T00:00:00Z
+Expires: ${new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('.')[0] + 'Z'}
 Canonical: https://tophhie.cloud/.well-known/security.txt
 Canonical: https://tophhie.co.uk/.well-known/security.txt
-Preferred-Languages: en
 Policy: https://blog.tophhie.cloud/security-vulnerability-disclosure-policy/
+Preferred-Languages: en
 `;
       return new Response(content, {
         headers: {
