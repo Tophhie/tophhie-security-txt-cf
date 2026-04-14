@@ -9,6 +9,7 @@ Expires: 2027-04-14T00:00:00Z
 Canonical: https://tophhie.cloud/.well-known/security.txt
 Canonical: https://tophhie.co.uk/.well-known/security.txt
 Preferred-Languages: en
+Policy: https://blog.tophhie.cloud/security-vulnerability-disclosure-policy/
 `;
       return new Response(content, {
         headers: {
