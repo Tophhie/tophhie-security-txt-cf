@@ -3,7 +3,7 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === '/.well-known/security.txt' || url.pathname === '/security.txt') {
-      const content = `# Tophhie Security Disclosure
+      const content = `# Tophhie Cloud Security Disclosure
 Contact: mailto:security@tophhie.cloud
 Expires: 2027-04-14T00:00:00Z
 Canonical: https://tophhie.cloud/.well-known/security.txt
